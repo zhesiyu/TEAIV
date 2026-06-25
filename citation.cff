@@ -3,10 +3,10 @@ cff-version: 1.2.0
 title: "The TEAIV model: Extending the standard TEIV model to account for viral budding ramp up"
 message: "If you use this code or data, please cite it using the metadata below."
 authors:
-  - family-names: "Yu"
-    given-names: "Zhe Si"
-    affiliation: "York University"
-    orcid: "https://orcid.org/0009-0000-2512-9335"
+  - family-names: "Yu", "Korosec"
+    given-names: "Zhe Si", "Chapin"
+    affiliation: "York University", "University of Guelph"
+    orcid: "https://orcid.org/0009-0000-2512-9335", "https://orcid.org/0000-0001-5137-2195"
 repository-code: "https://github.com/zhesiyu/TEAIV"
 url: "https://github.com/zhesiyu/TEAIV"
 abstract: >
