@@ -1,0 +1,18 @@
+
+cff-version: 1.2.0
+title: "The TEAIV model: Extending the standard TEIV model to account for viral budding ramp up"
+message: "If you use this code or data, please cite it using the metadata below."
+authors:
+  - family-names: "Yu"
+    given-names: "Zhe Si"
+    affiliation: "York University"
+    orcid: "https://orcid.org/0009-0000-2512-9335"
+repository-code: "https://github.com/zhesiyu/TEAIV"
+url: "https://github.com/zhesiyu/TEAIV"
+abstract: >
+  Understanding how viruses replicate and spread within a host is fundamental to predicting disease progression, timing, and dosage of effective therapeutic and prophylactic interventions. A target-cell limited approach is often used to model within-host viral kinetics to characterize disease infection dynamics. The standard target-cell limited model, the TEIV model, has been instrumental for understanding SARS-CoV-2 within-host viral kinetics. However, its core assumptions of instantaneous viral budding and exponentially distributed cell lifetimes oversimplify fundamental biological processes, potentially limiting predictive power. In this work, we consider a novel model approach, the TEAIV model: an extension to the TEIV model that considers an infected partially-productive cell state that ramps up through $n$ stages to a fully productive state. {\color{red}{We analytically derive $R_{0}$ for the general TEAIV model with arbitrary infectious cell ramping, and then consider fit the TEAIV model to various SARS-CoV-2 viral load datasets}}. We fit the TEAIV model to several SARS-CoV-2 viral load datasets, including indivdiuals with both severe and mild infection considering mutliple ramping up functions and comapring results to standard TEIV mdoel fits. We further compare TEAIV and TEIV model fits with and without infected cell death incorporated in the eclipse (E) and partially infected (A) compartments and investigate best-fit frameworks with up to 10 A states. We find that linear budding ramp-up dynamics minimizes the {\color{red}{Bayesian Information Criterion}} (BIC) (with $\Delta$BIC $>$ 2) across all model formulations when the total number of eclipse and budding compartments exceeds three. Furthermore, we find that the inclusion or exclusion of cell death applied to eclipse or ramping compartments does not substantially affect this result. Overall, our results demonstrate that accounting for non-instantaneous viral budding provides a better fit to SARS-CoV-2 viral load data and establishes a foundation for more mechanistically informed within-host models.
+keywords:
+- Mathematical Modelling
+license: MIT
+version: 0.1.0
+date-released: 2026-04-08
