@@ -1,0 +1,41 @@
+
+[LONGITUDINAL]
+input = {alpha,D,E,C,B,ECLIPSE0,BUD0,ep,Time0}
+
+EQUATION:
+odeType = stiff
+
+; initial conditions
+t0   = -Time0
+yT_0 = 1.33e5
+
+yE1_0 = ECLIPSE0
+yE2_0 = 0
+yE3_0 = 0
+yE4_0 = 0
+yE5_0 = 0
+yE6_0 = 0
+yB_0 = BUD0
+v_0   = 0
+F_0   = 0
+
+n = 6
+; TE(I1,...,I6)IV model with n=5, so (n+1)=6 progression stages
+;n + 1 eclipse stages (n = 5 for 6 eclipse stages)
+ddt_yT  = -alpha*yT*v
+
+ddt_yE1  = alpha*yT*v - n*E*yE1 - D*yE1
+ddt_yE2 = n*E*yE1  - n*E*yE1 - D*yE1
+ddt_yE3 = n*E*yE1 - n*E*yE2 - D*yE2
+ddt_yE4 = n*E*yE2 - n*E*yE3 - D*yE3
+ddt_yE5 = n*E*yE3 - n*E*yE4 - D*yE4
+ddt_yE6 = n*E*yE4 - n*E*yE5 - D*yE5
+ddt_yB = n*E*yI5 - D*yE6
+
+ddt_F = (1-ep)*yB - C*F
+ddt_v = ep*yB - alpha*yT*v - C*v
+
+S = max(log10(v + F + 1), -5)
+
+OUTPUT:
+output = {S}
