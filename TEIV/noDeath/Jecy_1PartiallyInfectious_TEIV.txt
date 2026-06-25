@@ -1,0 +1,56 @@
+
+[LONGITUDINAL]
+input = {alpha,D,E,C,B,ECLIPSE0,BUD0,ep, Time0}
+
+EQUATION:
+odeType = stiff
+
+;initial conditions
+t0 = -Time0
+yT_0 = 1.33e5
+;yT_0 = initTarget
+yE_0 =ECLIPSE0 ;  0.0000001
+y2_0 = 0
+
+
+yB_0 = BUD0 ; French cohort sets this to 1/30
+v_0 = 0
+F_0 = 0
+
+; we note that for here, the Ai and E are the same, where the number of yi actually includes E as 1
+; this is a relic from previous work; might be changed in the future
+n=1
+
+;d^(1/(n-1))
+
+
+
+;In-host bottleneck Model from "Effects of transmission bottlenecks on the diversity of influenza a virus"
+
+;death rates here:
+
+;methd = 1/(n)
+;d_2 = D*methd
+
+
+
+ddt_yT = -(alpha*yT*v)
+; E does not have natural death rate
+ddt_yE = alpha*yT*v - ((n+1)*E)*yE
+ddt_y2 = (n+1)*E*yE - ((n+1)*E + D)*y2 ;- ( d_2+ (n+1)*E)*y2
+
+
+ddt_yB = (n+1)*E*y2 - D*yB
+
+; F - the noninfectious virus
+; v - infectious
+
+ddt_F = (1-ep)*B*yB - C*F
+;ddt_F = (1-ep)*B*yB - C*F
+ddt_v = ep*B*yB - alpha*yT*v - C*v
+;ddt_v = ep*B*yB - alpha*yT*v - C*v
+
+S = max(log10(v + F + 1),-5)
+
+OUTPUT:
+output = {S}

@@ -1,0 +1,10 @@
+parameters,shrinkage_mode,shrinkage_mean,shrinkage_condDist
+alpha,79.1083,85.5838,57.6169
+D,-10.929,-15.6808,-2.67976
+E,nan,nan,nan
+C,nan,nan,nan
+B,99.5174,96.9692,5.99133
+ECLIPSE0,nan,nan,nan
+BUD0,nan,nan,nan
+ep,nan,nan,nan
+Time0,15.5097,-8.44454,-13.6001

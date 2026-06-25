@@ -1,0 +1,5 @@
+id,eta_alpha_SAEM,eta_D_SAEM,eta_E_SAEM,eta_C_SAEM,eta_B_SAEM,eta_ECLIPSE0_SAEM,eta_BUD0_SAEM,eta_ep_SAEM,eta_Time0_SAEM,eta_alpha_mean,eta_D_mean,eta_E_mean,eta_C_mean,eta_B_mean,eta_ECLIPSE0_mean,eta_BUD0_mean,eta_ep_mean,eta_Time0_mean,eta_alpha_mode,eta_D_mode,eta_E_mode,eta_C_mode,eta_B_mode,eta_ECLIPSE0_mode,eta_BUD0_mode,eta_ep_mode,eta_Time0_mode,eta_alpha_sd,eta_D_sd,eta_E_sd,eta_C_sd,eta_B_sd,eta_ECLIPSE0_sd,eta_BUD0_sd,eta_ep_sd,eta_Time0_sd
+1,0,0.897113,0,0,-0.411457,0,0,0,-2.29656,0,0.958418,0,0,-0.324884,0,0,0,-3.54094,0,1.34186,0,0,0.237009,0,0,0,-5.53171,0,0.172879,0,0,0.221412,0,0,0,4.72604
+2,0,-0.58545,0,0,0.169404,0,0,0,9.3142,0,-0.589129,0,0,0.151445,0,0,0,8.01845,0,-0.593455,0,0,0.151071,0,0,0,1.85075,0,0.0172093,0,0,0.285042,0,0,0,7.62772
+3,0,-0.837223,0,0,-0.0423554,0,0,0,7.29905,0,-0.830892,0,0,-0.035921,0,0,0,5.44153,0,-0.761904,0,0,-0.00044334,0,0,0,-4.53207,0,0.0582474,0,0,0.420825,0,0,0,8.3041
+4,0,0.526672,0,0,0.309258,0,0,0,-14.8839,0,0.524788,0,0,0.313325,0,0,0,-14.2507,0,0.523869,0,0,0.220097,0,0,0,-9.966,0,0.0533273,0,0,0.108715,0,0,0,4.92613

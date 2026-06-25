@@ -1,0 +1,136 @@
+********************************************************************************
+*          Jecy_8partiallyInfectious_rampUpArithmetic_nonHosp.mlxtran          *
+*          May 03, 2026 at 18:41:22                                            *
+*          Monolix version : 2024R1                                            *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------     se_sa    rse(%)   P2.5_sa  P97.5_sa
+alpha_pop    :                    4.93e-05
+D_pop        :                       0.941     0.263      27.9     0.559      1.58
+E_pop        :                           5
+C_pop        :                          10
+B_pop        :                    9.15e+03     0.416   0.00455  9.15e+03  9.15e+03
+ECLIPSE0_pop :                       1e-07
+BUD0_pop     :                       0.033
+ep_pop       :                       0.001
+Time0_pop    :                        10.5      5.34      50.9      0.03        14
+
+Standard Deviation of the Random Effects -
+omega_alpha  :                        12.4      7.12      57.3      4.84      31.9
+omega_D      :                       0.526     0.191      36.3     0.273      1.01
+omega_C      :                         134       225       168      22.8       782
+omega_B      :                    1.08e-05  2.14e-05       198  1.63e-06  7.18e-05
+omega_Time0  :                        6.08      3.87      63.7       2.2      16.8
+
+Error Model Parameters -------------------
+a            :                        1.38    0.0745      5.41      1.24      1.53
+b            :                    2.22e-16    0.0185  8.32e+15         0  1.46e-11
+
+Elapsed time (seconds):  3.7e+02
+CPU time     (seconds):  2.1e+03
+Exploratory phase iterations:      800 (Stopped at the maximum number of iterations/auto-stop criteria have not been reached)
+Smoothing phase iterations:        192 (Autostop)
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
+
+
+Estimation of the individual parameters by Conditional Distribution ------------
+                     min            Q1        median            Q3           max  shrinkage(%)
+alpha    :      1.95e+05      4.97e+05      8.02e+05      1.18e+06      1.56e+06          88.3
+D        :         0.559         0.562          1.07          1.58           1.6           -14
+E        :             5             5             5             5             5           nan
+C        :          5.19          10.1            15            15            15          44.1
+B        :      9.15e+03      9.15e+03      9.15e+03      9.15e+03      9.15e+03          98.3
+ECLIPSE0 :         1e-07         1e-07         1e-07         1e-07         1e-07           nan
+BUD0     :         0.033         0.033         0.033         0.033         0.033           nan
+ep       :         0.001         0.001         0.001         0.001         0.001           nan
+Time0    :         0.116         0.738          7.16          13.4          13.9         -3.13
+
+Elapsed time (seconds):  1.8e+02
+CPU time     (seconds):  1.1e+03
+Iterations:      476 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+
+Estimation of the individual parameters by Conditional Mode --------------------
+                     min            Q1        median            Q3           max  shrinkage(%)
+alpha    :       0.00213        0.0053        0.0222        0.0638        0.0917          86.7
+D        :         0.558         0.572          1.07          1.58           1.6         -11.9
+E        :             5             5             5             5             5           nan
+C        :          1.07          8.03            15            15            15          91.1
+B        :      9.15e+03      9.15e+03      9.15e+03      9.15e+03      9.15e+03          98.9
+ECLIPSE0 :         1e-07         1e-07         1e-07         1e-07         1e-07           nan
+BUD0     :         0.033         0.033         0.033         0.033         0.033           nan
+ep       :         0.001         0.001         0.001         0.001         0.001           nan
+Time0    :         0.361         0.855          7.38          13.6          13.9          33.8
+
+Elapsed time (seconds):      1.5
+CPU time     (seconds):        5
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE FISHER INFORMATION MATRIX ____________________________________
+
+
+Estimation of the Fisher information matrix by Stochastic Approximation --------
+
+Correlation Matrix :
+      D_pop         1
+      B_pop-0.00028546         1
+  Time0_pop 0.0049089  -0.23054         1
+omega_alpha  -0.01415  -0.11039 -0.004584         1
+    omega_D -0.016783 0.0097241 -0.013214  0.012244         1
+    omega_C  0.001342   -0.5731   0.16121   0.11016 0.0022629         1
+    omega_B 0.0099529-0.0046652  0.032395  -0.26465 -0.011599  -0.13149         1
+omega_Time0 0.0083221  -0.24843    0.3454  0.020478 -0.010239   0.14852 -0.065035         1
+          a  -0.01267-0.0036101 -0.014727  0.008255  0.073139  0.030489  0.011634  0.010283         1
+          b  0.013928 0.0024771  0.013584 -0.010777  -0.07951 -0.031781 -0.013966 -0.010709  -0.91734         1
+
+                               min       max   max/min
+Eigen values           :     0.083       1.9        24
+
+Elapsed time (seconds):       89
+CPU time     (seconds):  5.4e+02
+Iterations:      212 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE LOG-LIKELIHOOD _______________________________________________
+
+                                                            (is)
+-2 x log-likelihood                       (OFV) :        3826.71
+Akaike Information Criteria               (AIC) :        3846.71
+Corrected Bayesian Information Criteria  (BICc) :        3868.59
+Bayesian Information Criteria             (BIC) :        3840.57
+
+Elapsed time                          (seconds) :           2.55
+CPU time                              (seconds) :           6.00
+MonteCarlo size (is):     1000 (Fixed number of iterations)
+
+
+[Importance Sampling] Standard error        : 0.247
+                      Sampling distribution : T-distribution with 5 degrees of freedom
+
+ _______________________________________________________________________________
+
+DATASET INFORMATION
+Number of individuals: 4
+Number of observations (10): 1086
+Number of doses: 0
+

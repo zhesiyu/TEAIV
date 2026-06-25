@@ -1,0 +1,7 @@
+eta1,eta2,coeff,statistics,p-value
+eta_alpha,eta_D,0,-0.0506468,0.96279
+eta_alpha,eta_B,0,1.52549,0.224553
+eta_alpha,eta_Time0,0,0.0854662,0.937275
+eta_D,eta_B,0,2.10965,0.125409
+eta_D,eta_Time0,0,-8.46522,0.00346065
+eta_B,eta_Time0,0,-1.79259,0.170945

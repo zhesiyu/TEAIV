@@ -1,0 +1,5 @@
+parameter,statistics,p-value,test
+alpha,0.874818,0.442705,Shapiro-Wilk
+D,0.810607,0.189833,Shapiro-Wilk
+B,0.861231,0.394153,Shapiro-Wilk
+Time0,0.919851,0.729182,Shapiro-Wilk

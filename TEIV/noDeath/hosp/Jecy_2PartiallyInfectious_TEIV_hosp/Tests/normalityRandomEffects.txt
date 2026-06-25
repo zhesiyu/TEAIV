@@ -1,0 +1,5 @@
+eta,statistics,p-value
+eta_alpha,0.889052,0.435631
+eta_D,0.97168,0.985749
+eta_B,0.870718,0.378028
+eta_Time0,0.932771,0.890662
